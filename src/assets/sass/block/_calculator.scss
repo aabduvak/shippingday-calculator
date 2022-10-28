@@ -1,0 +1,56 @@
+.calculator {
+	min-height: 100vh;
+	position: relative;
+	padding: 40px 0;
+	color: $text-color;
+
+	.background {
+		background: url('../img/bg.svg') center center/cover no-repeat;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		display: block;
+		height: 100%;
+		width: 30%;
+	}
+
+	.title {
+		font-weight: bold;
+		font-size: 43px;
+	}
+
+	.subtitle {
+		width: 70%;
+		margin-top: 80px;
+		font-weight: 800;
+		font-size: 85px;
+	}
+
+	&__btn {
+		margin-top: 60px;
+		border-radius: 25px;
+		background: linear-gradient(60deg, $gradient-start 0%, $gradient-end 100%);
+		font-size: 27px;
+		border: none;
+		width: 200px;
+	}
+	
+	.description {
+		margin-top: 40px;
+		font-size: 27px;
+		font-weight: 300;
+		
+		span {
+			font-weight: 600;
+			font-size: 29px;
+		}
+	}
+}
+
+.modal {
+	font-size: 22px;
+	.calculator__btn {
+		width: 160px;
+		margin-top: 0;
+	}
+}

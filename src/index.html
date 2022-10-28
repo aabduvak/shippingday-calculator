@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Company</title>
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+	<section class="calculator py-8">
+		<div class="container">
+			<h1 class="title">The Company</h1>
+			<h2 class="subtitle">
+				Shipping Time Calculator
+			</h2>
+
+			<form>
+				<div class="row">
+					<div class="col-sm-6 col-lg-3 col-md-5">
+						<input type="text" class="form-control" placeholder="Order date" id="datepicker"
+							min="2022-10-28">
+					</div>
+					<div class="col-sm-6 col-lg-3 col-md-5">
+						<select class="form-select" id="productstyle">
+							<option value="">Fabric Type</option>
+							<option value="Cotton">Cotton</option>
+							<option value="Linen">Linen</option>
+						</select>
+					</div>
+					<div class="col-sm-6 col-lg-3 col-md-5 position-relative">
+						<input type="number" class="form-control" min="1" max="100" placeholder="Quantity"
+							id="productnumber">
+						<img src="assets/img/info.svg" id="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Shipping Dates May Vary Based on Quantity" alt="icon">
+					</div>
+				</div>
+				<button class="btn btn-primary calculator__btn" type="submit" data-bs-toggle="modal">
+					Calculate
+				</button>
+			</form>
+
+			<h3 class="description">
+				Your Estimated Shipping Time Is <span>23 september 2023</span>
+			</h3>
+		</div>
+		<div class="background"></div>
+	</section>
+
+	<button type="button" class="btn btn-primary modal-btn d-none" data-bs-toggle="modal" data-bs-target="#modal">
+		Launch demo modal
+	</button>
+	
+	<div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Invalid Submission</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					Please Fill All Information Correctly
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary calculator__btn"
+						data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>

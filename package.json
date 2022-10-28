@@ -1,0 +1,36 @@
+{
+	"name": "thecompany",
+	"version": "1.0.0",
+	"description": "",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "aabduvak",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.7.4",
+		"@babel/preset-env": "^7.7.4",
+		"babel": "^6.23.0",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^8.0.6",
+		"browser-sync": "^2.26.5",
+		"core-js": "^3.4.2",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^6.1.0",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-cli": "^2.2.0",
+		"gulp-rename": "^1.4.0",
+		"gulp-sass": "^5.0.0",
+		"sass": "^1.35.1"
+	},
+	"browserslist": [
+		"last 1 version",
+		"> 1%",
+		"maintained node versions",
+		"not dead"
+	],
+	"dependencies": {
+		"bootstrap": "^5.2.2"
+	}
+}
